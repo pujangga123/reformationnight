@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reformation Night 2026 | Teater Musikal John Calvin</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display for classic elegant headers, Inter for readable body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons for lightweight iconography -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        purple: {
+                            950: '#1a0b2e',
+                            900: '#2b144a',
+                            800: '#3a1d60',
+                        },
+                        gold: {
+                            300: '#fbe29f',
+                            400: '#e5c06b',
+                            500: '#d4af37',
+                            600: '#aa8c2c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom Styles for extra polish */
+        .text-gradient-gold {
+            background: linear-gradient(to right, #fbe29f, #d4af37, #aa8c2c, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-panel {
+            background: rgba(43, 20, 74, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .btn-gold {
+            background: linear-gradient(135deg, #d4af37 0%, #aa8c2c 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background: linear-gradient(135deg, #fbe29f 0%, #d4af37 100%);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<!-- Menambahkan background image, bg-fixed untuk efek parallax -->
+<body class="bg-purple-950 text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-purple-950 bg-[url('assets/bg.jpg')] bg-fixed bg-cover bg-center bg-no-repeat">
+
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="glass-panel w-full border-b-0 border-t-0 border-l-0 border-r-0 border-b border-gold-500/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                        <div class="w-8 h-8 rounded-full border-2 border-gold-400 flex items-center justify-center">
+                            <i data-feather="book" class="text-gold-400 w-4 h-4"></i>
+                        </div>
+                        <span class="font-serif font-bold text-xl text-gold-300 tracking-wider uppercase">GRII Bandung</span>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#tentang" class="text-gray-300 hover:text-gold-400 transition-colors text-sm uppercase tracking-widest text-shadow">Tentang</a>
+                        <a href="#detail" class="text-gray-300 hover:text-gold-400 transition-colors text-sm uppercase tracking-widest text-shadow">Waktu & Tempat</a>
+                        <a href="#pengisi-acara" class="text-gray-300 hover:text-gold-400 transition-colors text-sm uppercase tracking-widest text-shadow">Pengisi Acara</a>
+                        <button onclick="openModal()" class="btn-gold text-purple-950 px-6 py-2 rounded-full font-bold uppercase tracking-wider text-sm shadow-lg">
+                            Daftar Gratis
+                        </button>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button class="text-gold-400 hover:text-gold-300 focus:outline-none">
+                            <i data-feather="menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background dibuat sedikit gelap (bg-black/40) agar teks tetap terbaca -->
+    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-black/40 backdrop-blur-[2px]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                
+                <!-- Left Content -->
+                <div class="flex-1 text-center lg:text-left space-y-6">
+                    <p class="text-gold-400 uppercase tracking-[0.3em] text-sm md:text-base font-semibold drop-shadow-md">
+                        Teater Musikal Kisah Hidup John Calvin
+                    </p>
+                    
+                    <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-black leading-tight drop-shadow-2xl">
+                        <span class="block text-gray-100">Hidup dalam</span>
+                        <span class="block text-gradient-gold mt-2 uppercase drop-shadow-lg">Kedaulatan</span>
+                        <span class="block text-gradient-gold uppercase drop-shadow-lg">Tuhan</span>
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto lg:mx-0 mt-6 drop-shadow-md">
+                        Mari hadir dan saksikan karya teater musikal epik yang membawa kita menelusuri perjalanan iman dan perjuangan reformasi di malam <strong>Reformation Night 2026</strong>.
+                    </p>
+                    
+                    <div class="pt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <button onclick="openModal()" class="btn-gold w-full sm:w-auto text-purple-950 px-8 py-4 rounded-full font-bold uppercase tracking-widest text-lg shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2">
+                            <span>Daftar Sekarang</span>
+                            <i data-feather="arrow-right" class="w-5 h-5"></i>
+                        </button>
+                        <p class="text-sm text-gray-300 mt-2 sm:mt-0 ml-0 sm:ml-4 flex items-center gap-2 drop-shadow-md">
+                            <i data-feather="info" class="w-4 h-4 text-gold-500"></i>
+                            Acara tidak dipungut biaya (GRATIS)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Content (Poster) -->
+                <div class="flex-1 w-full max-w-md lg:max-w-lg relative group hidden md:block">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-gold-600 to-gold-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                    <img src="assets/poster1.jpg" alt="Poster Reformation Night" class="relative rounded-lg shadow-2xl border-2 border-gold-500/30 object-cover w-full h-auto transform transition duration-500 hover:scale-[1.02]">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparansi pada seksi ditambahkan (bg-purple-950/85) -->
+    <section id="detail" class="py-20 bg-purple-950/85 backdrop-blur-sm relative border-t border-purple-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-100 mb-4">Informasi Acara</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Date/Time Card -->
+                <div class="glass-panel p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300 bg-purple-900/40">
+                    <div class="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center mx-auto mb-6 border border-gold-500/30 shadow-lg">
+                        <i data-feather="calendar" class="text-gold-400 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-gray-100 mb-2">31 Oktober 2026</h3>
+                    <p class="text-gold-300 font-semibold text-lg">Hari Sabtu</p>
+                    <p class="text-gray-300 mt-2">Pukul 17.00 WIB - Selesai</p>
+                </div>
+
+                <!-- Location Card -->
+                <div class="glass-panel p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300 bg-purple-900/40">
+                    <div class="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center mx-auto mb-6 border border-gold-500/30 shadow-lg">
+                        <i data-feather="map-pin" class="text-gold-400 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-gray-100 mb-2">GRII Bandung</h3>
+                    <p class="text-gray-200">Jl. Moh. Toha No. 229</p>
+                    <p class="text-gray-300 mt-2">Bandung, Jawa Barat</p>
+                </div>
+
+                <!-- Ticket Card -->
+                <div class="glass-panel p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300 bg-purple-900/40">
+                    <div class="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center mx-auto mb-6 border border-gold-500/30 shadow-lg">
+                        <i data-feather="ticket" class="text-gold-400 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-gray-100 mb-2">GRATIS</h3>
+                    <p class="text-gold-300 font-semibold uppercase tracking-widest text-sm mb-4">Wajib Daftar</p>
+                    <button onclick="openModal()" class="text-sm border border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-purple-950 px-6 py-2 rounded-full transition-colors">
+                        Reservasi Tiket
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparansi bg-purple-900/85 -->
+    <section id="pengisi-acara" class="py-24 bg-purple-900/85 backdrop-blur-sm relative border-t border-purple-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-100 mb-4">Pengisi Acara</h2>
+                <p class="text-gray-200 max-w-2xl mx-auto">Dipandu oleh hamba Tuhan dan konduktor ternama untuk membawakan pesan reformasi melalui firman dan puji-pujian.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-12 lg:gap-24">
+                <!-- Pembicara -->
+                <div class="text-center group">
+                    <div class="relative w-48 h-48 mx-auto mb-6">
+                        <div class="absolute inset-0 rounded-full border-2 border-gold-500/50 group-hover:scale-110 transition-transform duration-500"></div>
+                        <img src="https://placehold.co/400x400/2b144a/e5c06b?text=JK" alt="Pdt. Jack Kawira" class="rounded-full w-full h-full object-cover border-4 border-purple-950 relative z-10 grayscale-[30%] sepia-[20%]">
+                    </div>
+                    <p class="text-gold-400 uppercase tracking-widest text-sm font-semibold mb-2">Pembicara</p>
+                    <h3 class="font-serif text-3xl font-bold text-gray-100 drop-shadow-md">Pdt. Jack Kawira</h3>
+                </div>
+
+                <!-- Conductor -->
+                <div class="text-center group">
+                    <div class="relative w-48 h-48 mx-auto mb-6">
+                        <div class="absolute inset-0 rounded-full border-2 border-gold-500/50 group-hover:scale-110 transition-transform duration-500"></div>
+                        <img src="https://placehold.co/400x400/2b144a/e5c06b?text=VW" alt="Vincent Wiguna" class="rounded-full w-full h-full object-cover border-4 border-purple-950 relative z-10 grayscale-[30%] sepia-[20%]">
+                    </div>
+                    <p class="text-gold-400 uppercase tracking-widest text-sm font-semibold mb-2">Conductor</p>
+                    <h3 class="font-serif text-3xl font-bold text-gray-100 mb-2 drop-shadow-md">Vincent Wiguna</h3>
+                    <span class="inline-block glass-panel px-4 py-1 rounded-full text-xs text-gray-200 shadow-sm">Conductor GBN 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparansi kuat untuk menonjolkan background gambar -->
+    <section class="py-24 bg-black/50 backdrop-blur-sm relative border-y border-gold-500/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-100 mb-8 drop-shadow-lg">Amankan Tempat Anda Segera</h2>
+            <p class="text-gray-200 mb-10 text-lg drop-shadow-md">Kapasitas gedung terbatas. Pastikan Anda mendaftar untuk mendapatkan e-ticket masuk ke acara Reformation Night 2026.</p>
+            <button onclick="openModal()" class="btn-gold text-purple-950 px-10 py-5 rounded-full font-bold uppercase tracking-widest text-xl shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:scale-105 inline-flex items-center gap-3">
+                <i data-feather="edit-3"></i>
+                Formulir Pendaftaran
+            </button>
+        </div>
+    </section>
+
+    <footer class="bg-purple-950/95 backdrop-blur-md pt-16 pb-8 border-t border-purple-900 text-center md:text-left relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-6">
+                        <i data-feather="book" class="text-gold-400 w-6 h-6"></i>
+                        <span class="font-serif font-bold text-xl text-gold-300 uppercase tracking-wider">GRII Bandung</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Mengembalikan esensi pengajaran reformasi melalui teater, musik, dan kebenaran Firman Tuhan.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-gray-100 font-bold uppercase tracking-wider mb-6">Kontak & Lokasi</h4>
+                    <ul class="text-gray-400 space-y-3 text-sm">
+                        <li class="flex items-start justify-center md:justify-start gap-3">
+                            <i data-feather="map-pin" class="w-4 h-4 mt-1 text-gold-500 shrink-0"></i>
+                            <span>Jl. Moh. Toha No. 229, Karasak, Kec. Astanaanyar, Kota Bandung, Jawa Barat 40243</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-gray-100 font-bold uppercase tracking-wider mb-6">Informasi Resmi</h4>
+                    <a href="https://reformationnight.com" target="_blank" class="inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 transition-colors text-lg font-serif italic">
+                        <i data-feather="globe" class="w-5 h-5"></i>
+                        reformationnight.com
+                    </a>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-purple-900/50 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 GRII Bandung. All rights reserved.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-500 hover:text-gold-400 transition-colors"><i data-feather="instagram" class="w-5 h-5"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-gold-400 transition-colors"><i data-feather="youtube" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div id="regModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <div class="glass-panel w-full max-w-lg mx-4 rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300" id="modalContent">
+            
+            <div class="p-6 border-b border-gold-500/20 flex justify-between items-center bg-purple-900/80">
+                <h3 class="font-serif text-2xl text-gold-400 font-bold">Pendaftaran Acara</h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-white transition-colors focus:outline-none">
+                    <i data-feather="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <div class="p-6 md:p-8 space-y-6 bg-purple-950/90">
+                <p class="text-gray-300 text-sm">Silakan isi data diri Anda untuk mendapatkan e-ticket masuk ke acara Teater Musikal Kisah Hidup John Calvin.</p>
+                
+                <form onsubmit="handleRegistration(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-1">Nama Lengkap</label>
+                        <input type="text" required class="w-full px-4 py-3 bg-purple-900/50 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white placeholder-gray-500" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-1">Nomor WhatsApp</label>
+                        <input type="tel" required class="w-full px-4 py-3 bg-purple-900/50 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white placeholder-gray-500" placeholder="Contoh: 08123456789">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-1">Jumlah Tiket</label>
+                        <select class="w-full px-4 py-3 bg-purple-900/50 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white appearance-none">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="w-full mt-6 btn-gold text-purple-950 py-3 rounded-lg font-bold uppercase tracking-wider">
+                        Kirim Pendaftaran
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Message Box -->
+    <div id="successMsg" class="fixed bottom-5 right-5 z-[110] translate-y-20 opacity-0 transition-all duration-300 glass-panel border-l-4 border-l-green-400 p-4 rounded-lg flex items-start gap-3 bg-purple-950/90">
+        <i data-feather="check-circle" class="text-green-400 w-6 h-6 shrink-0 mt-0.5"></i>
+        <div>
+            <h4 class="text-white font-bold mb-1">Pendaftaran Berhasil!</h4>
+            <p class="text-gray-300 text-sm">Terima kasih telah mendaftar. E-ticket akan dikirimkan melalui WhatsApp.</p>
+        </div>
+        <button onclick="closeSuccessMsg()" class="text-gray-400 hover:text-white ml-4">
+            <i data-feather="x" class="w-4 h-4"></i>
+        </button>
+    </div>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Modal Logic
+        const modal = document.getElementById('regModal');
+        const modalContent = document.getElementById('modalContent');
+        const successMsg = document.getElementById('successMsg');
+
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+            }, 10);
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto'; 
+            }, 300);
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        function handleRegistration(e) {
+            e.preventDefault();
+            closeModal();
+            
+            setTimeout(() => {
+                successMsg.classList.remove('translate-y-20', 'opacity-0');
+                
+                setTimeout(() => {
+                    closeSuccessMsg();
+                }, 5000);
+            }, 300);
+            
+            e.target.reset();
+        }
+
+        function closeSuccessMsg() {
+            successMsg.classList.add('translate-y-20', 'opacity-0');
+        }
+
+        // Add scrolled state to navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-purple-950/95', 'backdrop-blur-md', 'shadow-lg');
+            } else {
+                nav.classList.remove('bg-purple-950/95', 'backdrop-blur-md', 'shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
