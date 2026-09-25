@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reformation Night 2026 | Teater Musikal John Calvin</title>
-    
+
+    <!-- Meta Tag untuk Preview WhatsApp / Facebook (Open Graph) -->
+    <meta property="og:type" content="website">
+    <!-- Ganti URL di bawah dengan alamat website asli Anda nanti -->
+    <meta property="og:url" content="https://reformationnight.com/">
+    <meta property="og:title" content="Reformation Night 2026 | Hidup dalam Kedaulatan Tuhan">
+    <meta property="og:description"
+        content="Saksikan karya teater musikal epik yang membawa kita menelusuri perjalanan iman dan perjuangan reformasi. Sabtu, 31 Oktober 2026 di GRII Bandung. Daftar GRATIS!">
+
+    <!-- PENTING: Gunakan URL absolut lengkap ke lokasi gambar Anda -->
+    <meta property="og:image" content="https://reformationnight.com/assets/preview1.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <!-- Ukuran ideal untuk preview WhatsApp (Rekomendasi: di bawah 300KB) -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Meta Tag untuk Twitter (Opsional tapi disarankan) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reformation Night 2026 | Hidup dalam Kedaulatan Tuhan">
+    <meta name="twitter:description"
+        content="Saksikan karya teater musikal epik di malam Reformation Night 2026. Daftar GRATIS!">
+    <meta name="twitter:image" content="https://reformationnight.com/assets/preview1.jpg">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts: Playfair Display for classic elegant headers, Inter for readable body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+
     <!-- Feather Icons for lightweight iconography -->
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -41,7 +65,7 @@
             }
         }
     </script>
-    
+
     <style>
         /* Custom Styles for extra polish */
         .text-gradient-gold {
@@ -50,16 +74,19 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
         .glass-panel {
             background: rgba(43, 20, 74, 0.4);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(212, 175, 55, 0.2);
         }
+
         .btn-gold {
             background: linear-gradient(135deg, #d4af37 0%, #aa8c2c 100%);
             transition: all 0.3s ease;
         }
+
         .btn-gold:hover {
             background: linear-gradient(135deg, #fbe29f 0%, #d4af37 100%);
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
@@ -68,7 +95,9 @@
     </style>
 </head>
 <!-- Menambahkan background image, bg-fixed untuk efek parallax -->
-<body class="bg-purple-950 text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-purple-950 bg-[url('assets/bg.jpg')] bg-fixed bg-cover bg-center bg-no-repeat">
+
+<body
+    class="bg-purple-950 text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-purple-950 bg-[url('assets/bg.jpg')] bg-fixed bg-cover bg-center bg-no-repeat">
 
     <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
         <div class="glass-panel w-full border-b-0 border-t-0 border-l-0 border-r-0 border-b border-gold-500/20">
@@ -78,13 +107,20 @@
                         <div class="w-8 h-8 rounded-full border-2 border-gold-400 flex items-center justify-center">
                             <i data-feather="book" class="text-gold-400 w-4 h-4"></i>
                         </div>
-                        <span class="font-serif font-bold text-xl text-gold-300 tracking-wider uppercase">GRII Bandung</span>
+                        <span class="font-serif font-bold text-xl text-gold-300 tracking-wider uppercase">GRII
+                            Bandung</span>
                     </div>
                     <div class="hidden md:flex items-center space-x-8">
-                        <a href="#tentang" class="text-gray-300 hover:text-gold-400 transition-colors text-sm uppercase tracking-widest text-shadow">Tentang</a>
-                        <a href="#detail" class="text-gray-300 hover:text-gold-400 transition-colors text-sm uppercase tracking-widest text-shadow">Waktu & Tempat</a>
-                        <a href="#pengisi-acara" class="text-gray-300 hover:text-gold-400 transition-colors text-sm uppercase tracking-widest text-shadow">Pengisi Acara</a>
-                        <button onclick="openModal()" class="btn-gold text-purple-950 px-6 py-2 rounded-full font-bold uppercase tracking-wider text-sm shadow-lg">
+                        <a href="#tentang"
+                            class="text-gray-300 hover:text-gold-400 transition-colors text-sm uppercase tracking-widest text-shadow">Tentang</a>
+                        <a href="#detail"
+                            class="text-gray-300 hover:text-gold-400 transition-colors text-sm uppercase tracking-widest text-shadow">Waktu
+                            & Tempat</a>
+                        <a href="#pengisi-acara"
+                            class="text-gray-300 hover:text-gold-400 transition-colors text-sm uppercase tracking-widest text-shadow">Pengisi
+                            Acara</a>
+                        <button onclick="openModal()"
+                            class="btn-gold text-purple-950 px-6 py-2 rounded-full font-bold uppercase tracking-wider text-sm shadow-lg">
                             Daftar Gratis
                         </button>
                     </div>
@@ -99,32 +135,38 @@
     </nav>
 
     <!-- Background dibuat sedikit gelap (bg-black/40) agar teks tetap terbaca -->
-    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-black/40 backdrop-blur-[2px]">
+    <section
+        class="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-black/40 backdrop-blur-[2px]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                
+
                 <!-- Left Content -->
                 <div class="flex-1 text-center lg:text-left space-y-6">
-                    <p class="text-gold-400 uppercase tracking-[0.3em] text-sm md:text-base font-semibold drop-shadow-md">
+                    <p
+                        class="text-gold-400 uppercase tracking-[0.3em] text-sm md:text-base font-semibold drop-shadow-md">
                         Teater Musikal Kisah Hidup John Calvin
                     </p>
-                    
+
                     <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-black leading-tight drop-shadow-2xl">
                         <span class="block text-gray-100">Hidup dalam</span>
                         <span class="block text-gradient-gold mt-2 uppercase drop-shadow-lg">Kedaulatan</span>
                         <span class="block text-gradient-gold uppercase drop-shadow-lg">Tuhan</span>
                     </h1>
-                    
-                    <p class="text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto lg:mx-0 mt-6 drop-shadow-md">
-                        Mari hadir dan saksikan karya teater musikal epik yang membawa kita menelusuri perjalanan iman dan perjuangan reformasi di malam <strong>Reformation Night 2026</strong>.
+
+                    <p
+                        class="text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto lg:mx-0 mt-6 drop-shadow-md">
+                        Mari hadir dan saksikan karya teater musikal epik yang membawa kita menelusuri perjalanan iman
+                        dan perjuangan reformasi di malam <strong>Reformation Night 2026</strong>.
                     </p>
-                    
+
                     <div class="pt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <button onclick="openModal()" class="btn-gold w-full sm:w-auto text-purple-950 px-8 py-4 rounded-full font-bold uppercase tracking-widest text-lg shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2">
+                        <button onclick="openModal()"
+                            class="btn-gold w-full sm:w-auto text-purple-950 px-8 py-4 rounded-full font-bold uppercase tracking-widest text-lg shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2">
                             <span>Daftar Sekarang</span>
                             <i data-feather="arrow-right" class="w-5 h-5"></i>
                         </button>
-                        <p class="text-sm text-gray-300 mt-2 sm:mt-0 ml-0 sm:ml-4 flex items-center gap-2 drop-shadow-md">
+                        <p
+                            class="text-sm text-gray-300 mt-2 sm:mt-0 ml-0 sm:ml-4 flex items-center gap-2 drop-shadow-md">
                             <i data-feather="info" class="w-4 h-4 text-gold-500"></i>
                             Acara tidak dipungut biaya (GRATIS)
                         </p>
@@ -133,8 +175,11 @@
 
                 <!-- Right Content (Poster) -->
                 <div class="flex-1 w-full max-w-md lg:max-w-lg relative group hidden md:block">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-gold-600 to-gold-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                    <img src="assets/poster1.jpg" alt="Poster Reformation Night" class="relative rounded-lg shadow-2xl border-2 border-gold-500/30 object-cover w-full h-auto transform transition duration-500 hover:scale-[1.02]">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-gold-600 to-gold-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200">
+                    </div>
+                    <img src="assets/poster1.jpg" alt="Poster Reformation Night"
+                        class="relative rounded-lg shadow-2xl border-2 border-gold-500/30 object-cover w-full h-auto transform transition duration-500 hover:scale-[1.02]">
                 </div>
 
             </div>
@@ -148,11 +193,13 @@
                 <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-100 mb-4">Informasi Acara</h2>
                 <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full"></div>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Date/Time Card -->
-                <div class="glass-panel p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300 bg-purple-900/40">
-                    <div class="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center mx-auto mb-6 border border-gold-500/30 shadow-lg">
+                <div
+                    class="glass-panel p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300 bg-purple-900/40">
+                    <div
+                        class="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center mx-auto mb-6 border border-gold-500/30 shadow-lg">
                         <i data-feather="calendar" class="text-gold-400 w-8 h-8"></i>
                     </div>
                     <h3 class="font-serif text-2xl font-bold text-gray-100 mb-2">31 Oktober 2026</h3>
@@ -161,8 +208,10 @@
                 </div>
 
                 <!-- Location Card -->
-                <div class="glass-panel p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300 bg-purple-900/40">
-                    <div class="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center mx-auto mb-6 border border-gold-500/30 shadow-lg">
+                <div
+                    class="glass-panel p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300 bg-purple-900/40">
+                    <div
+                        class="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center mx-auto mb-6 border border-gold-500/30 shadow-lg">
                         <i data-feather="map-pin" class="text-gold-400 w-8 h-8"></i>
                     </div>
                     <h3 class="font-serif text-2xl font-bold text-gray-100 mb-2">GRII Bandung</h3>
@@ -171,13 +220,16 @@
                 </div>
 
                 <!-- Ticket Card -->
-                <div class="glass-panel p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300 bg-purple-900/40">
-                    <div class="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center mx-auto mb-6 border border-gold-500/30 shadow-lg">
+                <div
+                    class="glass-panel p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300 bg-purple-900/40">
+                    <div
+                        class="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center mx-auto mb-6 border border-gold-500/30 shadow-lg">
                         <i data-feather="ticket" class="text-gold-400 w-8 h-8"></i>
                     </div>
                     <h3 class="font-serif text-2xl font-bold text-gray-100 mb-2">GRATIS</h3>
                     <p class="text-gold-300 font-semibold uppercase tracking-widest text-sm mb-4">Wajib Daftar</p>
-                    <button onclick="openModal()" class="text-sm border border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-purple-950 px-6 py-2 rounded-full transition-colors">
+                    <button onclick="openModal()"
+                        class="text-sm border border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-purple-950 px-6 py-2 rounded-full transition-colors">
                         Reservasi Tiket
                     </button>
                 </div>
@@ -190,15 +242,19 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-100 mb-4">Pengisi Acara</h2>
-                <p class="text-gray-200 max-w-2xl mx-auto">Dipandu oleh hamba Tuhan dan konduktor ternama untuk membawakan pesan reformasi melalui firman dan puji-pujian.</p>
+                <p class="text-gray-200 max-w-2xl mx-auto">Dipandu oleh hamba Tuhan dan konduktor ternama untuk
+                    membawakan pesan reformasi melalui firman dan puji-pujian.</p>
             </div>
 
             <div class="flex flex-col md:flex-row justify-center gap-12 lg:gap-24">
                 <!-- Pembicara -->
                 <div class="text-center group">
                     <div class="relative w-48 h-48 mx-auto mb-6">
-                        <div class="absolute inset-0 rounded-full border-2 border-gold-500/50 group-hover:scale-110 transition-transform duration-500"></div>
-                        <img src="https://placehold.co/400x400/2b144a/e5c06b?text=JK" alt="Pdt. Jack Kawira" class="rounded-full w-full h-full object-cover border-4 border-purple-950 relative z-10 grayscale-[30%] sepia-[20%]">
+                        <div
+                            class="absolute inset-0 rounded-full border-2 border-gold-500/50 group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <img src="https://placehold.co/400x400/2b144a/e5c06b?text=JK" alt="Pdt. Jack Kawira"
+                            class="rounded-full w-full h-full object-cover border-4 border-purple-950 relative z-10 grayscale-[30%] sepia-[20%]">
                     </div>
                     <p class="text-gold-400 uppercase tracking-widest text-sm font-semibold mb-2">Pembicara</p>
                     <h3 class="font-serif text-3xl font-bold text-gray-100 drop-shadow-md">Pdt. Jack Kawira</h3>
@@ -207,13 +263,63 @@
                 <!-- Conductor -->
                 <div class="text-center group">
                     <div class="relative w-48 h-48 mx-auto mb-6">
-                        <div class="absolute inset-0 rounded-full border-2 border-gold-500/50 group-hover:scale-110 transition-transform duration-500"></div>
-                        <img src="https://placehold.co/400x400/2b144a/e5c06b?text=VW" alt="Vincent Wiguna" class="rounded-full w-full h-full object-cover border-4 border-purple-950 relative z-10 grayscale-[30%] sepia-[20%]">
+                        <div
+                            class="absolute inset-0 rounded-full border-2 border-gold-500/50 group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <img src="https://placehold.co/400x400/2b144a/e5c06b?text=VW" alt="Vincent Wiguna"
+                            class="rounded-full w-full h-full object-cover border-4 border-purple-950 relative z-10 grayscale-[30%] sepia-[20%]">
                     </div>
                     <p class="text-gold-400 uppercase tracking-widest text-sm font-semibold mb-2">Conductor</p>
                     <h3 class="font-serif text-3xl font-bold text-gray-100 mb-2 drop-shadow-md">Vincent Wiguna</h3>
-                    <span class="inline-block glass-panel px-4 py-1 rounded-full text-xs text-gray-200 shadow-sm">Conductor GBN 2026</span>
+                    <span
+                        class="inline-block glass-panel px-4 py-1 rounded-full text-xs text-gray-200 shadow-sm">Conductor
+                        GBN 2026</span>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Lokasi Acara -->
+    <section id="lokasi" class="py-24 bg-purple-950/90 backdrop-blur-md relative border-t border-purple-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-100 mb-4 drop-shadow-md">Lokasi Acara</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full mb-6 shadow-[0_0_10px_rgba(212,175,55,0.5)]"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto text-lg flex flex-col items-center gap-2">
+                    <span class="inline-flex items-center justify-center bg-purple-900 w-12 h-12 rounded-full border border-gold-500/30 shadow-lg mb-2">
+                        <i data-feather="map-pin" class="w-6 h-6 text-gold-400"></i>
+                    </span>
+                    <strong class="text-gray-100 font-serif text-xl tracking-wider uppercase">GRII Bandung</strong>
+                    <span>Jl. Moh. Toha No. 229, Karasak, Kec. Astanaanyar, Kota Bandung, Jawa Barat 40243</span>
+                </p>
+            </div>
+            
+            <!-- Container Peta dengan Efek Glow & Kaca -->
+            <div class="glass-panel p-2 md:p-3 rounded-2xl shadow-2xl relative group max-w-5xl mx-auto">
+                <!-- Efek Glow di belakang peta -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-gold-600/40 to-purple-600/40 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-300"></div>
+                
+                <!-- Embed iframe Google Maps -->
+                <div class="relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden z-10 bg-purple-900">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=GRII%20Bandung,%20Jl.%20Moh.%20Toha%20No.%20229,%20Bandung&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="absolute inset-0 grayscale-[20%] opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                    ></iframe>
+                </div>
+            </div>
+            
+            <!-- Tombol Buka di Aplikasi -->
+            <div class="mt-10 text-center relative z-20">
+                <a href="https://maps.app.goo.gl/B9Z2q1w2qYqP9X3Z8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-purple-950 px-8 py-3 rounded-full transition-colors font-bold uppercase tracking-wider text-sm shadow-[0_0_15px_rgba(212,175,55,0.2)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:-translate-y-1 transform">
+                    <i data-feather="navigation" class="w-4 h-4"></i>
+                    Buka di Aplikasi Google Maps
+                </a>
             </div>
         </div>
     </section>
@@ -221,22 +327,27 @@
     <!-- Transparansi kuat untuk menonjolkan background gambar -->
     <section class="py-24 bg-black/50 backdrop-blur-sm relative border-y border-gold-500/20">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-100 mb-8 drop-shadow-lg">Amankan Tempat Anda Segera</h2>
-            <p class="text-gray-200 mb-10 text-lg drop-shadow-md">Kapasitas gedung terbatas. Pastikan Anda mendaftar untuk mendapatkan e-ticket masuk ke acara Reformation Night 2026.</p>
-            <button onclick="openModal()" class="btn-gold text-purple-950 px-10 py-5 rounded-full font-bold uppercase tracking-widest text-xl shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:scale-105 inline-flex items-center gap-3">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-100 mb-8 drop-shadow-lg">Amankan Tempat Anda
+                Segera</h2>
+            <p class="text-gray-200 mb-10 text-lg drop-shadow-md">Kapasitas gedung terbatas. Pastikan Anda mendaftar
+                untuk mendapatkan e-ticket masuk ke acara Reformation Night 2026.</p>
+            <button onclick="openModal()"
+                class="btn-gold text-purple-950 px-10 py-5 rounded-full font-bold uppercase tracking-widest text-xl shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:scale-105 inline-flex items-center gap-3">
                 <i data-feather="edit-3"></i>
                 Formulir Pendaftaran
             </button>
         </div>
     </section>
 
-    <footer class="bg-purple-950/95 backdrop-blur-md pt-16 pb-8 border-t border-purple-900 text-center md:text-left relative z-10">
+    <footer
+        class="bg-purple-950/95 backdrop-blur-md pt-16 pb-8 border-t border-purple-900 text-center md:text-left relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                 <div>
                     <div class="flex items-center justify-center md:justify-start gap-2 mb-6">
                         <i data-feather="book" class="text-gold-400 w-6 h-6"></i>
-                        <span class="font-serif font-bold text-xl text-gold-300 uppercase tracking-wider">GRII Bandung</span>
+                        <span class="font-serif font-bold text-xl text-gold-300 uppercase tracking-wider">GRII
+                            Bandung</span>
                     </div>
                     <p class="text-gray-400 text-sm leading-relaxed">
                         Mengembalikan esensi pengajaran reformasi melalui teater, musik, dan kebenaran Firman Tuhan.
@@ -247,65 +358,157 @@
                     <ul class="text-gray-400 space-y-3 text-sm">
                         <li class="flex items-start justify-center md:justify-start gap-3">
                             <i data-feather="map-pin" class="w-4 h-4 mt-1 text-gold-500 shrink-0"></i>
-                            <span>Jl. Moh. Toha No. 229, Karasak, Kec. Astanaanyar, Kota Bandung, Jawa Barat 40243</span>
+                            <span>Jl. Moh. Toha No. 229, Karasak, Kec. Astanaanyar, Kota Bandung, Jawa Barat
+                                40243</span>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-gray-100 font-bold uppercase tracking-wider mb-6">Informasi Resmi</h4>
-                    <a href="https://reformationnight.com" target="_blank" class="inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 transition-colors text-lg font-serif italic">
+                    <a href="https://reformationnight.com" target="_blank"
+                        class="inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 transition-colors text-lg font-serif italic">
                         <i data-feather="globe" class="w-5 h-5"></i>
                         reformationnight.com
                     </a>
                 </div>
             </div>
-            
-            <div class="pt-8 border-t border-purple-900/50 flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <div
+                class="pt-8 border-t border-purple-900/50 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-gray-500 text-sm">
                     &copy; 2026 GRII Bandung. All rights reserved.
                 </p>
                 <div class="flex gap-4">
-                    <a href="#" class="text-gray-500 hover:text-gold-400 transition-colors"><i data-feather="instagram" class="w-5 h-5"></i></a>
-                    <a href="#" class="text-gray-500 hover:text-gold-400 transition-colors"><i data-feather="youtube" class="w-5 h-5"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-gold-400 transition-colors"><i data-feather="instagram"
+                            class="w-5 h-5"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-gold-400 transition-colors"><i data-feather="youtube"
+                            class="w-5 h-5"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Registration Modal -->
-    <div id="regModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 transition-opacity duration-300">
-        <div class="glass-panel w-full max-w-lg mx-4 rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300" id="modalContent">
-            
-            <div class="p-6 border-b border-gold-500/20 flex justify-between items-center bg-purple-900/80">
-                <h3 class="font-serif text-2xl text-gold-400 font-bold">Pendaftaran Acara</h3>
-                <button onclick="closeModal()" class="text-gray-400 hover:text-white transition-colors focus:outline-none">
-                    <i data-feather="x" class="w-6 h-6"></i>
+    <div id="regModal"
+        class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 transition-opacity duration-300 py-6 px-4">
+        <!-- 
+          Tambahkan max-h-[95vh] agar modal tidak melebihi layar 
+          dan flex flex-col agar area konten di dalamnya bisa di-scroll 
+        -->
+        <div class="glass-panel w-full max-w-lg mx-auto rounded-2xl shadow-2xl transform scale-95 transition-transform duration-300 flex flex-col max-h-[95vh]"
+            id="modalContent">
+
+            <!-- Modal Header (Tetap Fix di Atas) -->
+            <div
+                class="p-5 sm:p-6 border-b border-gold-500/20 flex justify-between items-center bg-purple-900/80 rounded-t-2xl shrink-0">
+                <h3 class="font-serif text-xl sm:text-2xl text-gold-400 font-bold">Pendaftaran Acara</h3>
+                <button onclick="closeModal()"
+                    class="text-gray-400 hover:text-white transition-colors focus:outline-none bg-purple-950/50 p-1.5 rounded-full hover:bg-purple-800">
+                    <i data-feather="x" class="w-5 h-5 sm:w-6 sm:h-6"></i>
                 </button>
             </div>
-            
-            <div class="p-6 md:p-8 space-y-6 bg-purple-950/90">
-                <p class="text-gray-300 text-sm">Silakan isi data diri Anda untuk mendapatkan e-ticket masuk ke acara Teater Musikal Kisah Hidup John Calvin.</p>
-                
+
+            <!-- Modal Body (Bisa di-scroll) -->
+            <!-- overflow-y-auto adalah kunci agar form bisa digeser ke bawah -->
+            <div class="p-5 sm:p-8 overflow-y-auto bg-purple-950/90 rounded-b-2xl custom-scrollbar">
+                <p class="text-gray-300 text-sm mb-6">Silakan isi data diri Anda untuk mendapatkan e-ticket masuk ke
+                    acara Teater Musikal Kisah Hidup John Calvin.</p>
+
                 <form onsubmit="handleRegistration(event)" class="space-y-4">
+                    <!-- Nama Lengkap -->
                     <div>
                         <label class="block text-sm font-medium text-gray-300 mb-1">Nama Lengkap</label>
-                        <input type="text" required class="w-full px-4 py-3 bg-purple-900/50 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white placeholder-gray-500" placeholder="Masukkan nama Anda">
+                        <input type="text" name="nama" required
+                            class="w-full px-4 py-3 bg-purple-900/50 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white placeholder-gray-500"
+                            placeholder="Masukkan nama Anda">
                     </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                        <input type="email" name="email" required
+                            class="w-full px-4 py-3 bg-purple-900/50 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white placeholder-gray-500"
+                            placeholder="contoh@email.com">
+                    </div>
+
+                    <!-- Nomor WhatsApp -->
                     <div>
                         <label class="block text-sm font-medium text-gray-300 mb-1">Nomor WhatsApp</label>
-                        <input type="tel" required class="w-full px-4 py-3 bg-purple-900/50 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white placeholder-gray-500" placeholder="Contoh: 08123456789">
+                        <input type="tel" name="whatsapp" required
+                            class="w-full px-4 py-3 bg-purple-900/50 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white placeholder-gray-500"
+                            placeholder="Contoh: 08123456789">
                     </div>
+
+                    <!-- Gereja/Institusi -->
                     <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-1">Jumlah Tiket</label>
-                        <select class="w-full px-4 py-3 bg-purple-900/50 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white appearance-none">
-                            <option value="1">1 Orang</option>
-                            <option value="2">2 Orang</option>
-                            <option value="3">3 Orang</option>
-                            <option value="4">4 Orang</option>
-                        </select>
+                        <label class="block text-sm font-medium text-gray-300 mb-1">Gereja / Institusi</label>
+                        <input type="text" name="institusi" required
+                            class="w-full px-4 py-3 bg-purple-900/50 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white placeholder-gray-500"
+                            placeholder="Asal gereja atau institusi Anda">
                     </div>
-                    
-                    <button type="submit" class="w-full mt-6 btn-gold text-purple-950 py-3 rounded-lg font-bold uppercase tracking-wider">
+
+                    <!-- Sumber Informasi (Checkbox) -->
+                    <div class="pt-2">
+                        <label class="block text-sm font-medium text-gray-300 mb-3">Dari mana Anda mendapatkan informasi
+                            tentang acara ini? (Opsional)</label>
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3 bg-purple-900/30 p-4 rounded-lg border border-purple-800/50">
+                            <label
+                                class="inline-flex items-center cursor-pointer text-sm text-gray-300 hover:text-gold-400">
+                                <input type="checkbox" name="sumber_info[]"
+                                    value="Sosmed (Facebook, Instagram, YouTube)"
+                                    class="w-4 h-4 text-gold-500 bg-purple-900/50 border-purple-700 rounded focus:ring-gold-500 focus:ring-offset-purple-950 accent-gold-500">
+                                <span class="ml-3">Sosmed (FB, IG, YouTube)</span>
+                            </label>
+                            <label
+                                class="inline-flex items-center cursor-pointer text-sm text-gray-300 hover:text-gold-400">
+                                <input type="checkbox" name="sumber_info[]" value="WhatsApp"
+                                    class="w-4 h-4 text-gold-500 bg-purple-900/50 border-purple-700 rounded focus:ring-gold-500 focus:ring-offset-purple-950 accent-gold-500">
+                                <span class="ml-3">WhatsApp</span>
+                            </label>
+                            <label
+                                class="inline-flex items-center cursor-pointer text-sm text-gray-300 hover:text-gold-400">
+                                <input type="checkbox" name="sumber_info[]" value="Gereja/Institusi"
+                                    class="w-4 h-4 text-gold-500 bg-purple-900/50 border-purple-700 rounded focus:ring-gold-500 focus:ring-offset-purple-950 accent-gold-500">
+                                <span class="ml-3">Gereja / Institusi</span>
+                            </label>
+                            <label
+                                class="inline-flex items-center cursor-pointer text-sm text-gray-300 hover:text-gold-400">
+                                <input type="checkbox" name="sumber_info[]" value="Keluarga/Teman"
+                                    class="w-4 h-4 text-gold-500 bg-purple-900/50 border-purple-700 rounded focus:ring-gold-500 focus:ring-offset-purple-950 accent-gold-500">
+                                <span class="ml-3">Keluarga / Teman</span>
+                            </label>
+                            <label
+                                class="inline-flex items-center cursor-pointer text-sm text-gray-300 hover:text-gold-400">
+                                <input type="checkbox" name="sumber_info[]" value="Spanduk/Poster"
+                                    class="w-4 h-4 text-gold-500 bg-purple-900/50 border-purple-700 rounded focus:ring-gold-500 focus:ring-offset-purple-950 accent-gold-500">
+                                <span class="ml-3">Spanduk / Poster</span>
+                            </label>
+                            <label
+                                class="inline-flex items-center cursor-pointer text-sm text-gray-300 hover:text-gold-400">
+                                <input type="checkbox" name="sumber_info[]" value="Radio"
+                                    class="w-4 h-4 text-gold-500 bg-purple-900/50 border-purple-700 rounded focus:ring-gold-500 focus:ring-offset-purple-950 accent-gold-500">
+                                <span class="ml-3">Radio</span>
+                            </label>
+
+                            <!-- Opsi Lain-lain + Textbox (Digabungkan agar rapi di mobile) -->
+                            <div class="sm:col-span-2 mt-1 flex flex-col sm:flex-row sm:items-center gap-2">
+                                <label
+                                    class="inline-flex items-center cursor-pointer text-sm text-gray-300 hover:text-gold-400 whitespace-nowrap">
+                                    <input type="checkbox" name="sumber_info[]" value="Lain-lain" id="chkLain"
+                                        onchange="toggleLain(this)"
+                                        class="w-4 h-4 text-gold-500 bg-purple-900/50 border-purple-700 rounded focus:ring-gold-500 focus:ring-offset-purple-950 accent-gold-500">
+                                    <span class="ml-3">Lain-lain:</span>
+                                </label>
+                                <input type="text" name="info_lain" id="txtLain" disabled
+                                    class="w-full px-3 py-2 bg-purple-950/80 border border-purple-700 rounded-lg focus:outline-none focus:border-gold-500 text-white placeholder-gray-500 text-sm disabled:opacity-40 disabled:cursor-not-allowed transition-opacity mt-2 sm:mt-0"
+                                    placeholder="Sebutkan (opsional)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="btnSubmit"
+                        class="w-full mt-6 btn-gold text-purple-950 py-4 rounded-lg font-bold uppercase tracking-wider transition-all shadow-lg text-sm sm:text-base">
                         Kirim Pendaftaran
                     </button>
                 </form>
@@ -314,11 +517,13 @@
     </div>
 
     <!-- Success Message Box -->
-    <div id="successMsg" class="fixed bottom-5 right-5 z-[110] translate-y-20 opacity-0 transition-all duration-300 glass-panel border-l-4 border-l-green-400 p-4 rounded-lg flex items-start gap-3 bg-purple-950/90">
+    <div id="successMsg"
+        class="fixed bottom-5 right-5 z-[110] translate-y-20 opacity-0 transition-all duration-300 glass-panel border-l-4 border-l-green-400 p-4 rounded-lg flex items-start gap-3 bg-purple-950/90">
         <i data-feather="check-circle" class="text-green-400 w-6 h-6 shrink-0 mt-0.5"></i>
         <div>
             <h4 class="text-white font-bold mb-1">Pendaftaran Berhasil!</h4>
-            <p class="text-gray-300 text-sm">Terima kasih telah mendaftar. E-ticket akan dikirimkan melalui WhatsApp.</p>
+            <p class="text-gray-300 text-sm">Terima kasih telah mendaftar. E-ticket akan dikirimkan melalui WhatsApp.
+            </p>
         </div>
         <button onclick="closeSuccessMsg()" class="text-gray-400 hover:text-white ml-4">
             <i data-feather="x" class="w-4 h-4"></i>
@@ -340,7 +545,7 @@
                 modal.classList.remove('opacity-0');
                 modalContent.classList.remove('scale-95');
             }, 10);
-            document.body.style.overflow = 'hidden'; 
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
@@ -348,7 +553,7 @@
             modalContent.classList.add('scale-95');
             setTimeout(() => {
                 modal.classList.add('hidden');
-                document.body.style.overflow = 'auto'; 
+                document.body.style.overflow = 'auto';
             }, 300);
         }
 
@@ -358,19 +563,53 @@
             }
         });
 
-        function handleRegistration(e) {
-            e.preventDefault();
-            closeModal();
-            
-            setTimeout(() => {
-                successMsg.classList.remove('translate-y-20', 'opacity-0');
-                
-                setTimeout(() => {
-                    closeSuccessMsg();
-                }, 5000);
-            }, 300);
-            
-            e.target.reset();
+        async function handleRegistration(e) {
+            e.preventDefault(); // Mencegah form reload halaman
+
+            const form = e.target;
+            const submitBtn = document.getElementById('btnSubmit');
+            const originalText = submitBtn.innerText;
+
+            // Ubah status tombol menjadi loading
+            submitBtn.innerText = 'Mengirim...';
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
+
+            try {
+                // Ambil semua data dari form
+                const formData = new FormData(form);
+
+                // Kirim data ke register.php menggunakan Fetch API
+                const response = await fetch('register.php', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    // Jika berhasil, tutup modal dan tampilkan pesan sukses
+                    closeModal();
+                    setTimeout(() => {
+                        successMsg.classList.remove('translate-y-20', 'opacity-0');
+
+                        // Sembunyikan pesan sukses setelah 5 detik
+                        setTimeout(() => {
+                            closeSuccessMsg();
+                        }, 5000);
+                    }, 300);
+
+                    form.reset(); // Kosongkan isian form
+                } else {
+                    alert('Terjadi kesalahan pada server. Silakan coba lagi.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Gagal terhubung. Pastikan Anda memiliki koneksi internet.');
+            } finally {
+                // Kembalikan status tombol seperti semula
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+            }
         }
 
         function closeSuccessMsg() {
@@ -388,4 +627,5 @@
         });
     </script>
 </body>
+
 </html>
