@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/reforma1/public_html/
     - /bin/cp * $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp assets/* $DEPLOYPATH/assets/
