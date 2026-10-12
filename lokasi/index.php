@@ -1,0 +1,2 @@
+<?php
+    header('location: https://www.google.com/maps/place/GRII+Bandung/@-6.9465324,107.6090153,20z/data=!4m6!3m5!1s0x2e68dd5adc0046f3:0xbec67e3e50f495ac!8m2!3d-6.9463663!4d107.6091629!16s%2Fg%2F1pzps3b5n?authuser=0&coh=219816&entry=tts&g_ep=EgoyMDI0MDgxMi4wKgBIAVAD');

@@ -23,7 +23,8 @@
     
     <!-- Tailwind CSS -->
     <!-- script src="https://cdn.tailwindcss.com"></script-->
-    <link href="tailwind.css" rel="stylesheet">
+    <!-- <link href="tailwind.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -173,26 +174,63 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-100 mb-4">Pengisi Acara</h2>
-                <p class="text-gray-200 max-w-2xl mx-auto">Dipandu oleh hamba Tuhan dan konduktor ternama untuk membawakan pesan reformasi melalui firman dan puji-pujian.</p>
+                <p class="text-gray-200 max-w-2xl mx-auto">Dipandu oleh hamba Tuhan dan praktisi profesional untuk membawakan pesan reformasi melalui firman dan karya puji-pujian.</p>
             </div>
-            <div class="flex flex-col md:flex-row justify-center gap-12 lg:gap-24">
-                <div class="text-center group">
-                    <div class="relative w-48 h-48 mx-auto mb-6">
-                        <div class="absolute inset-0 rounded-full border-2 border-gold-500/50 group-hover:scale-110 transition-transform duration-500"></div>
-                        <img src="https://placehold.co/400x400/2b144a/e5c06b?text=JK" alt="Pdt. Jack Kawira" class="rounded-full w-full h-full object-cover border-4 border-purple-950 relative z-10 grayscale-[30%] sepia-[20%]">
+            
+            <!-- Grid System: 1 kolom (HP portrait), 2 kolom (HP landscape/Tablet), 4 kolom (Laptop/Desktop) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 justify-items-center">
+                
+                <!-- Pengkhotbah: Jack Kawira -->
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-purple-950 overflow-hidden mb-4 relative shadow-lg">
+                        <div class="absolute inset-0 border-2 border-gold-500/50 rounded-full group-hover:scale-110 transition-transform duration-500 z-20"></div>
+                        <img src="assets/jack.png" alt="Pdt. Jack Kawira" class="w-full h-full object-cover grayscale-[30%] sepia-[20%] relative z-10">
                     </div>
-                    <p class="text-gold-400 uppercase tracking-widest text-sm font-semibold mb-2">Pembicara</p>
-                    <h3 class="font-serif text-3xl font-bold text-gray-100 drop-shadow-md">Pdt. Jack Kawira</h3>
+                    <p class="text-gold-400 uppercase tracking-widest text-xs font-semibold mb-1">Pengkhotbah</p>
+                    <h3 class="font-serif text-2xl font-bold text-gray-100 drop-shadow-md">Pdt. Jack Kawira</h3>
                 </div>
-                <div class="text-center group">
-                    <div class="relative w-48 h-48 mx-auto mb-6">
-                        <div class="absolute inset-0 rounded-full border-2 border-gold-500/50 group-hover:scale-110 transition-transform duration-500"></div>
-                        <img src="https://placehold.co/400x400/2b144a/e5c06b?text=VW" alt="Vincent Wiguna" class="rounded-full w-full h-full object-cover border-4 border-purple-950 relative z-10 grayscale-[30%] sepia-[20%]">
-                    </div>
-                    <p class="text-gold-400 uppercase tracking-widest text-sm font-semibold mb-2">Conductor</p>
-                    <h3 class="font-serif text-3xl font-bold text-gray-100 mb-2 drop-shadow-md">Vincent Wiguna</h3>
-                    <span class="inline-block glass-panel px-4 py-1 rounded-full text-xs text-gray-200 shadow-sm">Conductor GBN 2026</span>
+
+                <!-- Konduktor: Vincent Wiguna -->
+                <div class="flex flex-col items-center text-center group">
+                    <!-- Membungkus gambar dengan tag <a> agar bisa diklik -->
+                    <a href="https://www.instagram.com/vincent.wiguna/" target="_blank" rel="noopener noreferrer" class="block w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-purple-950 overflow-hidden mb-4 relative shadow-lg group-hover:shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-shadow cursor-pointer">
+                        <div class="absolute inset-0 border-2 border-gold-500/50 rounded-full group-hover:scale-110 transition-transform duration-500 z-20"></div>
+                        <!-- Tambahan efek warna penuh saat dihover -->
+                        <img src="assets/vincent.png" alt="Vincent Wiguna" class="w-full h-full object-cover grayscale-[30%] sepia-[20%] group-hover:grayscale-0 group-hover:sepia-0 transition-all duration-500 relative z-10">
+                    </a>
+                    <p class="text-gold-400 uppercase tracking-widest text-xs font-semibold mb-1">Konduktor</p>
+                    <a href="https://www.instagram.com/vincent.wiguna/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-gold-400 transition-colors group/link">
+                        <h3 class="font-serif text-2xl font-bold text-gray-100 group-hover/link:text-gold-400 drop-shadow-md">Vincent Wiguna</h3>
+                        <i data-feather="instagram" class="w-4 h-4 text-gray-400 group-hover/link:text-gold-400"></i>
+                    </a>
                 </div>
+
+                <!-- Komposer: Gavin Wiyanto -->
+                <div class="flex flex-col items-center text-center group">
+                    <a href="https://www.instagram.com/gavinwiyanto/" target="_blank" rel="noopener noreferrer" class="block w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-purple-950 overflow-hidden mb-4 relative shadow-lg group-hover:shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-shadow cursor-pointer">
+                        <div class="absolute inset-0 border-2 border-gold-500/50 rounded-full group-hover:scale-110 transition-transform duration-500 z-20"></div>
+                        <img src="assets/gavin.png" alt="Gavin Wiyanto" class="w-full h-full object-cover grayscale-[30%] sepia-[20%] group-hover:grayscale-0 group-hover:sepia-0 transition-all duration-500 relative z-10">
+                    </a>
+                    <p class="text-gold-400 uppercase tracking-widest text-xs font-semibold mb-1">Komposer</p>
+                    <a href="https://www.instagram.com/gavinwiyanto/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-gold-400 transition-colors group/link">
+                        <h3 class="font-serif text-2xl font-bold text-gray-100 group-hover/link:text-gold-400 drop-shadow-md">Gavin Wiyanto</h3>
+                        <i data-feather="instagram" class="w-4 h-4 text-gray-400 group-hover/link:text-gold-400"></i>
+                    </a>
+                </div>
+
+                <!-- Sutradara: Erik Gunawan -->
+                <div class="flex flex-col items-center text-center group">
+                    <a href="https://www.instagram.com/ericwu28/" target="_blank" rel="noopener noreferrer" class="block w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-purple-950 overflow-hidden mb-4 relative shadow-lg group-hover:shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-shadow cursor-pointer">
+                        <div class="absolute inset-0 border-2 border-gold-500/50 rounded-full group-hover:scale-110 transition-transform duration-500 z-20"></div>
+                        <img src="assets/erik.png" alt="Erik Gunawan" class="w-full h-full object-cover grayscale-[30%] sepia-[20%] group-hover:grayscale-0 group-hover:sepia-0 transition-all duration-500 relative z-10">
+                    </a>
+                    <p class="text-gold-400 uppercase tracking-widest text-xs font-semibold mb-1">Sutradara</p>
+                    <a href="https://www.instagram.com/ericwu28/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-gold-400 transition-colors group/link">
+                        <h3 class="font-serif text-2xl font-bold text-gray-100 group-hover/link:text-gold-400 drop-shadow-md">Erik Gunawan</h3>
+                        <i data-feather="instagram" class="w-4 h-4 text-gray-400 group-hover/link:text-gold-400"></i>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
