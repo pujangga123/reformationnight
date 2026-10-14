@@ -94,7 +94,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="tentang" class="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-black/40 backdrop-blur-[2px]">
+    <section id="beranda" class="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-black/40 backdrop-blur-[2px]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                 <div class="flex-1 text-center lg:text-left space-y-6">
@@ -102,28 +102,88 @@
                         Teater Musikal Kisah Hidup John Calvin
                     </p>
                     <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-black leading-tight drop-shadow-2xl">
-                        <!-- Judul yang baru -->
                         <span class="block text-gray-100">Calvin di</span>
                         <span class="block text-gradient-gold mt-2 uppercase drop-shadow-lg">Strasbourg</span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto lg:mx-0 mt-6 drop-shadow-md">
                         Mari hadir dan saksikan karya teater musikal epik yang membawa kita menelusuri perjalanan iman dan perjuangan reformasi di malam <strong>Reformation Night 2026</strong>.
                     </p>
-                    <div class="pt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <!-- Tombol Daftar Hero -->
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFzz6L49A2JQkuXMeOxmjSUB7UfoRJQdnqBWADksj3eNbOuw/viewform" target="_blank" rel="noopener noreferrer" class="btn-gold w-full sm:w-auto text-purple-950 px-8 py-4 rounded-full font-bold uppercase tracking-widest text-lg shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2">
+                    
+                    <!-- Area Tombol (Diperbarui) -->
+                    <div class="pt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 flex-wrap">
+                        
+                        <!-- Tombol Daftar (Primary) -->
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFzz6L49A2JQkuXMeOxmjSUB7UfoRJQdnqBWADksj3eNbOuw/viewform" target="_blank" rel="noopener noreferrer" class="btn-gold w-full sm:w-auto text-purple-950 px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2">
                             <span>Daftar Sekarang</span>
-                            <i data-feather="external-link" class="w-5 h-5"></i>
+                            <i data-feather="external-link" class="w-4 h-4"></i>
                         </a>
-                        <p class="text-sm text-gray-300 mt-2 sm:mt-0 ml-0 sm:ml-4 flex items-center gap-2 drop-shadow-md">
-                            <i data-feather="info" class="w-4 h-4 text-gold-500"></i>
-                            Acara tidak dipungut biaya (GRATIS)
-                        </p>
+                        
+                        <!-- Tombol Kisah (Secondary) -->
+                        <a href="#tentang" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm flex items-center justify-center gap-2 border-2 border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-purple-950 transition-colors duration-300">
+                            <span>Kisah Calvin di Strasbourg</span>
+                            <i data-feather="book-open" class="w-4 h-4"></i>
+                        </a>
+
                     </div>
+                    
+                    <!-- Info Gratis -->
+                    <p class="text-sm text-gray-300 mt-4 flex items-center justify-center lg:justify-start gap-2 drop-shadow-md">
+                        <i data-feather="info" class="w-4 h-4 text-gold-500"></i>
+                        Acara tidak dipungut biaya (GRATIS)
+                    </p>
                 </div>
+                
+                <!-- Poster Kanan -->
                 <div class="flex-1 w-full max-w-md lg:max-w-lg relative group hidden md:block">
                     <div class="absolute -inset-1 bg-gradient-to-r from-gold-600 to-gold-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                     <img src="assets/poster.jpg" alt="Poster Reformation Night" class="relative rounded-lg shadow-2xl border-2 border-gold-500/30 object-cover w-full h-auto transform transition duration-500 hover:scale-[1.02]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kisah Section -->
+    <section id="tentang" class="py-20 md:py-32 relative overflow-hidden bg-gradient-to-b from-purple-900/80 to-black/95 backdrop-blur-sm border-t border-purple-800/30">
+        <!-- Efek Glow Latar Belakang -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+            <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-purple-600/20 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                
+                <!-- Kolom Kiri: Gambar tentang1.png -->
+                <div class="w-full lg:w-1/2 flex justify-center">
+                    <img src="assets/tentang1.png" alt="Calvin di Strasbourg - Hidup dalam Kedaulatan Tuhan" class="w-full max-w-lg h-auto object-contain drop-shadow-[0_0_25px_rgba(255,255,255,0.2)] hover:scale-[1.02] transition-transform duration-700">
+                </div>
+                
+                <!-- Kolom Kanan: Teks & tentang2.png -->
+                <div class="w-full lg:w-1/2 flex flex-col relative">
+                    
+                    <!-- Gambar Banner/Pita -->
+                    <div class="flex justify-start lg:justify-end mb-10 lg:absolute lg:-top-16 lg:-right-8 xl:-right-16 z-20">
+                        <img src="assets/tentang2.png" alt="Reformation Night Teater Musikal" class="h-10 sm:h-12 md:h-14 w-auto object-contain drop-shadow-xl">
+                    </div>
+                    
+                    <!-- Judul Section (Diperbesar menjadi 4xl - 5xl) -->
+                    <h3 class="font-serif text-3xl md:text-4xl text-white mb-8 tracking-widest drop-shadow-md lg:mt-12">
+                        Strasbourg, 1538
+                    </h3>
+                    
+                    <!-- Paragraf Cerita (Diperbesar menjadi lg - xl, dan space antar paragraf ditambah) -->
+                    <div class="space-y-8 text-white text-base md:text-lg font-light leading-relaxed">
+                        <p>
+                            Terusir dari Jenewa, John Calvin (1509–1564) tiba di Strasbourg dengan satu pertanyaan: jika ia sungguh mengikuti panggilan Tuhan, mengapa jalan itu justru nampak gagal?
+                        </p>
+                        <p>
+                            Di bawah bimbingan Martin Bucer (1491–1551), ia perlahan belajar bahwa hidup tidak selalu dapat ditata setepat pemikirannya. Dan melalui perjumpaannya dengan Idelette de Bure (1500–1549), Calvin berhadapan dengan sesuatu yang lebih sulit daripada merumuskan keyakinan, yakni memilih ketika masa depan tidak dapat dipastikan.
+                        </p>
+                        <!-- Pertanyaan penutup (Diperbesar sedikit lagi menjadi xl - 2xl agar lebih menonjol) -->
+                        <p class="font-medium text-white italic pt-2 text-xl md:text-2xl leading-normal">
+                            Bagaimana jalan yang dianggap buntu itu justru menghantarnya kepada kehendak Allah?
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
