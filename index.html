@@ -95,51 +95,71 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="beranda" class="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-black/40 backdrop-blur-[2px]">
+    <section id="beranda" class="relative min-h-screen flex items-center justify-center pt-24 pb-12 lg:pt-32 overflow-hidden bg-black/40 backdrop-blur-[2px]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                <div class="flex-1 text-center lg:text-left space-y-6">
-                    <p class="text-gold-400 uppercase tracking-[0.3em] text-sm md:text-base font-semibold drop-shadow-md">
-                        Teater Musikal Kisah Hidup John Calvin
-                    </p>
-                    <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-black leading-tight drop-shadow-2xl">
-                        <span class="block text-gray-100">Calvin di</span>
-                        <!-- Class drop-shadow-lg dihapus dari baris di bawah agar warna gradient tidak tertutup bayangan (bug Safari) -->
-                        <span class="block text-gradient-gold mt-2 uppercase">Strasbourg</span>
-                    </h1>
-                    <p class="text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto lg:mx-0 mt-6 drop-shadow-md">
-                        Mari hadir dan saksikan karya teater musikal epik yang membawa kita menelusuri perjalanan iman dan perjuangan reformasi di malam <strong>Reformation Night 2026</strong>.
-                    </p>
+            
+            <!-- AREA TOMBOL "DAFTAR": KHUSUS MOBILE (Tampil paling atas, di atas video) -->
+            <div class="flex lg:hidden flex-col sm:flex-row items-center justify-center gap-4 flex-wrap mb-8 mt-4">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFzz6L49A2JQkuXMeOxmjSUB7UfoRJQdnqBWADksj3eNbOuw/viewform" target="_blank" rel="noopener noreferrer" class="btn-gold w-full sm:w-auto text-purple-950 px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2 transition-transform hover:scale-105">
+                    <span>Daftar Sekarang</span>
+                    <i data-feather="external-link" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-16">
+                
+                <!-- Kolom Teks -->
+                <div class="flex-1 text-center lg:text-left w-full order-last lg:order-first">
                     
-                    <!-- Area Tombol (Diperbarui) -->
-                    <div class="pt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 flex-wrap">
-                        
-                        <!-- Tombol Daftar (Primary) -->
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFzz6L49A2JQkuXMeOxmjSUB7UfoRJQdnqBWADksj3eNbOuw/viewform" target="_blank" rel="noopener noreferrer" class="btn-gold w-full sm:w-auto text-purple-950 px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2">
+                    <!-- AREA TOMBOL "DAFTAR": KHUSUS DESKTOP (Tampil di atas teks, tersembunyi di mobile) -->
+                    <div class="hidden lg:flex flex-row items-center justify-start gap-4 flex-wrap mb-8">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFzz6L49A2JQkuXMeOxmjSUB7UfoRJQdnqBWADksj3eNbOuw/viewform" target="_blank" rel="noopener noreferrer" class="btn-gold w-full sm:w-auto text-purple-950 px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2 transition-transform hover:scale-105">
                             <span>Daftar Sekarang</span>
                             <i data-feather="external-link" class="w-4 h-4"></i>
                         </a>
-                        
-                        <!-- Tombol Kisah (Secondary) -->
-                        <a href="#tentang" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm flex items-center justify-center gap-2 border-2 border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-purple-950 transition-colors duration-300">
+                    </div>
+                    
+                    <p class="text-gold-400 uppercase tracking-[0.3em] text-xs sm:text-sm md:text-base font-semibold drop-shadow-md mb-2 md:mb-4 mt-2 lg:mt-0">
+                        Teater Musikal Kisah Hidup John Calvin
+                    </p>
+                    
+                    <!-- Judul Dibuat 1 Baris (Inline) -->
+                    <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight drop-shadow-2xl mb-4 md:mb-6">
+                        <span class="text-gray-100">Calvin di</span>
+                        <span class="text-gradient-gold uppercase ml-1 md:ml-2">Strasbourg</span>
+                    </h1>
+                    
+                    <!-- Paragraf Intro -->
+                    <p class="text-sm sm:text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto lg:mx-0 drop-shadow-md mb-6">
+                        Mari hadir dan saksikan karya teater musikal epik yang membawa kita menelusuri perjalanan iman dan perjuangan reformasi di malam <strong>Reformation Night 2026</strong>.
+                    </p>
+                    
+                    <!-- AREA TOMBOL "KISAH CALVIN" (Dikembalikan ke bawah paragraf) -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start mb-6">
+                        <a href="#tentang" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm flex items-center justify-center gap-2 border-2 border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-purple-950 transition-all duration-300 hover:scale-105">
                             <span>Kisah Calvin di Strasbourg</span>
                             <i data-feather="book-open" class="w-4 h-4"></i>
                         </a>
-
                     </div>
                     
                     <!-- Info Gratis -->
-                    <p class="text-sm text-gray-300 mt-4 flex items-center justify-center lg:justify-start gap-2 drop-shadow-md">
+                    <p class="text-sm text-gray-300 flex items-center justify-center lg:justify-start gap-2 drop-shadow-md">
                         <i data-feather="info" class="w-4 h-4 text-gold-500"></i>
                         Acara tidak dipungut biaya (GRATIS)
                     </p>
                 </div>
                 
-                <!-- Poster Kanan -->
-                <div class="flex-1 w-full max-w-md lg:max-w-lg relative group hidden md:block">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-gold-600 to-gold-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                    <img src="assets/poster.jpg" alt="Poster Reformation Night" class="relative rounded-lg shadow-2xl border-2 border-gold-500/30 object-cover w-full h-auto transform transition duration-500 hover:scale-[1.02]">
+                <!-- Kolom Video Portrait -->
+                <div class="flex-1 w-full max-w-[14rem] sm:max-w-[16rem] lg:max-w-md relative group flex justify-center order-first lg:order-last">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-gold-600 to-gold-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                    
+                    <div class="relative w-full rounded-2xl overflow-hidden border-2 border-gold-500/30 shadow-2xl aspect-[9/16]">
+                        <div class="absolute inset-0 bg-purple-950/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                        
+                        <video src="assets/intro1.mp4" autoplay loop muted playsinline controls class="w-full h-full object-cover relative z-0 transform transition duration-500 group-hover:scale-[1.02]"></video>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </section>
